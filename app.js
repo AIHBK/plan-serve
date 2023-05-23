@@ -23,7 +23,7 @@ const app = express();
     // app.use(express.urlencoded({ extended: true })); 
     // app.use('/vue/admin', userRouter);
     app.use('/plan', adminRouter)
-    // 公开静态资源文件夹 配置静态资源 img为虚拟路径必须加/   static真是路径
+    // 公开静态资源文件夹 配置静态资源 img为虚拟路径必须加/ static真是路径
     app.use('/img/', express.static('./static'))
 app.listen(3000, function(){
     console.log('Server is running on port 3000');
